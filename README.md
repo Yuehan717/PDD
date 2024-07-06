@@ -4,8 +4,8 @@
 [Yuehan Zhang](link_to_author1_profile)<sup>1</sup>, Seungjun Lee<sup>1,2</sup>, [Angela Yao](link_to_author3_profile)<sup>1</sup>  
 National University of Singapore<sup>1</sup>, Korea University<sup>2</sup>  
 <p align="center">
-<img src="teaser.gif" width="800">
-<\p>
+<img src="teaser.gif" width="800" />
+</p>
   
 ## 📝Absract
 Existing methods approach Real-World Super-Resolution (RWSR) by learning blind general models through complex synthetic augmentation on training inputs; they sacrifice the performance on specific degradation for broader generalization to many possible ones. We address the **unsupervised RWSR** for a targeted real-world degradation. We study from a distillation perspective and introduce a novel Pairwise Distance Distillation framework.
