@@ -13,6 +13,10 @@ Through our framework, a model specialized in synthetic degradation adapts to ta
 
 Our method, as a learning framework, can be applied to off-the-shelf generalist models, e.g., RealESRGAN, and improve their performance in a real-world domain!
 
+### 🎯 TODOS
+* Release model weights
+* Release code
+* Update visual comparisons
 ## 🖼️ Results
 
 ## 👓 Key Features
@@ -45,6 +49,7 @@ Our method requires two sets of data for training:
 - LR real-world data: In the paper, we experiment with RealSR, DRealSR, NTRIE20; the efficiency of our method can also be validated on dped and video dataset VideoLQ.
 
 #### Model Weights
+We provide model weights of RealESRAGN and BSRGAN trained with our method.
 | Domain | Google Drive | Baidu Pan |
 |----------|----------|----------|
 | Row 1    | Cell 2   | Cell 3   |
