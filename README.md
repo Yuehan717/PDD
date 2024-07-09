@@ -49,8 +49,8 @@ cd PDD
 # Install dependencies
 TBA
 ```
-- The provided code demonstrates the current implementation of our method. You can find the main components in [srgan_ref_model.py](basicsr/models/srgan_ref_model.py) and [losses.py](basicsr/losses/losses.py).
-- We are in the process of cleaning and debugging the code and its environment. A finalized version together with instructions will be released soon.
+- The provided code demonstrates the implementation of our method. You can find the main components in [srgan_ref_model.py](basicsr/models/srgan_ref_model.py) and [losses.py](basicsr/losses/losses.py).
+- We are in the process of cleaning and debugging the code and its environment. A finalized version together with running instructions will be released later.
 
 ## 👉 Datasets & Model Weights
 #### Datasets
