@@ -19,7 +19,7 @@ Our method, as a learning framework, can be applied to off-the-shelf generalist 
 * Release model weights
 * Update links to datasets
 * Update visual results
-## 🖼️ Results
+## 🖼️ Visual Examples
 RealESRGAN + PDD | RealESRAGN
 <p align="center">
   <img src="VisualResults/boat.png" width="30%" />
