@@ -20,7 +20,7 @@ Our method, as a learning framework, can be applied to off-the-shelf generalist 
 * Update links to datasets
 * Update visual results
 ## 🖼️ Results
-RealESRGAN + Our | RealESRAGN
+RealESRGAN + PDD | RealESRAGN
 <p align="center">
   <img src="VisualResults/boat.png" width="30%" />
   <img src="VisualResults/bottles.png" width="30%" />
