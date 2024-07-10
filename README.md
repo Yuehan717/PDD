@@ -14,8 +14,9 @@ Through our framework, a model specialized in synthetic degradation adapts to ta
 Our method, as a learning framework, can be applied to off-the-shelf generalist models, e.g., RealESRGAN, and improve their performance in a real-world domain!
 
 ## 🎯 TODOS
-* Complete code; release installation and training instructions
+* <del>Complete code; release installation and training instructions</del>
 * <del>Public the repository</del>
+* Debug environment settings
 * Release model weights
 * Update links to datasets
 * Update visual results
@@ -52,8 +53,6 @@ git clone https://github.com/Yuehan717/PDD.git
 # Navigate into the repository
 cd PDD
 
-# Install dependencies
-pip install -r requirements.txt
 ```
 - If you only want to know the implementation, the main components of our method can be found in [srgan_ref_model.py](basicsr/models/srgan_ref_model.py) and [losses.py](basicsr/losses/losses.py) 😃.
 
@@ -80,7 +79,7 @@ torchrun --nproc_per_node=[number_of_gpus] --master_port=[port] basicsr/train_mi
 PYTHONPATH="./:${PYTHONPATH}" \
 python basicsr/train_mix.py -opt options/train/ESRGAN/[name_of_script].yml
 
-# Inference instructions
+# Inference
 python inference_SISR.py --input_path [path_to_input_folder] \
 --save_path [path_to_result_folder] --model [esrgan/bsrgan] \
 --model_path [path_to_model_weights] --color_corr
