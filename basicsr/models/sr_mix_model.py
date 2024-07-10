@@ -10,8 +10,6 @@ from basicsr.metrics import calculate_metric
 from basicsr.utils import get_root_logger, imwrite, tensor2img
 from basicsr.utils.registry import MODEL_REGISTRY
 from .base_model import BaseModel
-from basicsr.archs.swinir_arch import SwinIR
-
 
 @MODEL_REGISTRY.register()
 class SRMixModel(BaseModel):

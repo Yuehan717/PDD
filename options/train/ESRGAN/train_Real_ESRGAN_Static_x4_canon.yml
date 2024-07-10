@@ -10,8 +10,8 @@ datasets:
   train_s:
     name: DF2K
     type: BlindPairedImageDataset
-    dataroot_gt: datasets/DF2K
-    dataroot_lq: datasets/DF2K
+    dataroot_gt: ../PDD/datasets/DF2K
+    dataroot_lq: ../PDD/datasets/DF2K
     filename_tmpl: '{}'
     io_backend:
       type: disk
@@ -42,7 +42,7 @@ datasets:
   train_t:
     name: RealSR-Canon
     type: SingleImageDataset
-    dataroot_lq: datasets/RealSRV3/Canon/Train/4/LR
+    dataroot_lq: ../../Dataset/SISR/RealSRV3/Canon/Train/4/LR
     filename_tmpl: '{}'
     io_backend:
       type: disk
@@ -91,13 +91,13 @@ network_d:
   
 # path
 path:
-  pretrain_network_g: experiments/pretrained_models/Real-ESRGAN/RealESRGAN_x4plus.pth
+  pretrain_network_g: ../PDD/experiments/pretrained_models/Real-ESRGAN/RealESRGAN_x4plus.pth
   param_key_g: params_ema
   strict_load_g: True
   resume_state: ~
   # pretrain_network_d: experiments/RealESRGAN_x4_Increment_DF2K_DIV2Kmild_wgan_ema_gramchange_CE_noconv1_S2B_unetgan/models/net_d_40000.pth
 
-  pretrain_network_g_fix: experiments/pretrained_models/Real-ESRGAN/ESRGAN_SRx4_DF2KOST_official-ff704c30.pth
+  pretrain_network_g_fix: ../PDD/experiments/pretrained_models/Real-ESRGAN/ESRGAN_SRx4_DF2KOST_official-ff704c30.pth
   param_key_g_fix: params_ema
   strict_load_g_fix: true
   ignore_resume_networks: network_g_fix
@@ -148,7 +148,7 @@ train:
       'conv3_4': 0.3
       'conv4_4': 1
       'conv5_4': 1
-    vgg_type: vgg19
+    model_type: vgg19
     use_input_norm: true
     rinter_weight: 1.0
     rintra_weight: 1.0
@@ -182,7 +182,7 @@ train:
 
   net_d_iters: 1
   net_d_init_iters: 300
-  domain_opt_warmup_iters: 5
+  domain_opt_warmup_iters: 0
   domain_opt_detach: true
   domain_opt_wogan: false
 

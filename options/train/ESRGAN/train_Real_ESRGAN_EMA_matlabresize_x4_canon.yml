@@ -146,10 +146,10 @@ train:
       'conv3_4': 0.3
       'conv4_4': 1
       'conv5_4': 1
-    vgg_type: vgg19
+    model_type: vgg19
     use_input_norm: true
-    inter_weight: 0.5
-    intra_weight: 1.0
+    rinter_weight: 0.5
+    rintra_weight: 1.0
     range_norm: false
     delta_inter_type: gram_change
     cri_inter: fro

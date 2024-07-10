@@ -691,9 +691,9 @@ class DistillationLoss(nn.Module):
         elif self.cri_intra == 'fro':
             self.criterion_intra = None
         elif self.cri_intra == 'ce':
-            self.criterion_intra = CrossEntropyLoss(False, True)
+            self.criterion_intra = CrossEntropyLoss(one_hot=False, S2B=True)
         elif self.cri_intra == 'cosine_sim':
-            self.criterion_intra = CosineSimilarity(True)
+            self.criterion_intra = CosineSimilarity(S2B=True)
         else:
             raise NotImplementedError(f'{cri_intra} criterion has not been supported.')
         
