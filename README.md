@@ -1,6 +1,6 @@
 # [ECCV 2024] Pairwise Distance Distillation
 ### Pairwise Distance Distillation for Unsupervised Real-World Image Super-Resolution  
-[![arXiv](https://img.shields.io/badge/arXiv-<INDEX>-<COLOR>.svg)](https://arxiv.org/abs/<INDEX>)   
+[![arXiv](https://img.shields.io/badge/arXiv-2407.07302-<COLOR>.svg)](https://arxiv.org/abs/2407.07302)   
 Yuehan Zhang<sup>1</sup>, Seungjun Lee<sup>2</sup>, Angela Yao<sup>1</sup>  
 National University of Singapore<sup>1</sup>, Korea University<sup>2</sup>  
 <p align="center">
