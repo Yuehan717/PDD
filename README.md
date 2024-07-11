@@ -16,7 +16,7 @@ Our method, as a learning framework, can be applied to off-the-shelf generalist 
 ## 🎯 TODOS
 * <del>Complete code; release installation and training instructions</del>
 * <del>Public the repository</del>
-* Debug environment settings
+* <del>Debug environment settings</del>
 * Release model weights
 * Update links to datasets
 * Update visual results
@@ -42,8 +42,8 @@ We provide Static and EMA configurations for our method. The latter requires a s
 #### Setup Environment  
 Python >= 3.9  
 PyTorch > 2.0  
+[mmcv](https://github.com/open-mmlab/mmcv) (recommend mmcv==2.1.0)  
 [MMEngine](https://github.com/open-mmlab/mmengine)  
-[mmcv](https://github.com/open-mmlab/mmcv) ( 2.0.0 <= mmcv < 2.2.0)  
 [mmagic](https://github.com/open-mmlab/mmagic)
 #### Install PDD
 ```sh
@@ -53,6 +53,8 @@ git clone https://github.com/Yuehan717/PDD.git
 # Navigate into the repository
 cd PDD
 
+# Install dependencies
+pip install -r requirements.txt
 ```
 - If you only want to know the implementation, the main components of our method can be found in [srgan_ref_model.py](basicsr/models/srgan_ref_model.py) and [losses.py](basicsr/losses/losses.py) 😃.
 
