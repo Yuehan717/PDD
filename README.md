@@ -17,7 +17,7 @@ Our method, as a learning framework, can be applied to off-the-shelf generalist 
 * <del>Complete code; release installation and training instructions</del>
 * <del>Public the repository</del>
 * <del>Debug environment settings</del>
-* Release model weights
+* <del>Release model weights</del>
 * Update links to datasets
 * Update visual results
 ## 🖼️ Visual Examples
@@ -64,8 +64,9 @@ Our method requires two sets of data for training:
 - Paired synthetic data: We use ground-truth images in DF2K and create LRs on the fly.
 - LR real-world data: In the paper, we experiment with RealSR, DRealSR, and NTRIE20.
 
-#### Model Weights
-*Coming soon*
+#### Model Weights 
+[[Here]](https://drive.google.com/drive/folders/1wJSjU3p9ZUx2HNfwVaxi2G03Hr9HlJDz?usp=sharing)
+
 ## 👉 Usage
 ```sh
 # training instructions
