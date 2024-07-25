@@ -1,9 +1,6 @@
 from torch import nn as nn
-from basicsr.archs.arch_util import DWT_Haar
 from basicsr.utils.registry import ARCH_REGISTRY
 from torch.nn.utils import spectral_norm
-import torch.nn.functional as F
-import torch
 
 
 @ARCH_REGISTRY.register()
