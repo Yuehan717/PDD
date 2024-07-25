@@ -16,8 +16,8 @@ Our method, as a learning framework, can be applied to off-the-shelf generalist 
 ## 🎯 TODOS
 * <del>Complete code; release installation and training instructions</del>
 * <del>Public the repository</del>
-* Debug environment settings
-* Release model weights
+* <del>Debug environment settings</del>
+* <del>Release model weights</del>
 * Update links to datasets
 * Update visual results
 ## 🖼️ Visual Examples
@@ -42,8 +42,8 @@ We provide Static and EMA configurations for our method. The latter requires a s
 #### Setup Environment  
 Python >= 3.9  
 PyTorch > 2.0  
+[mmcv](https://github.com/open-mmlab/mmcv) (recommend mmcv==2.1.0)  
 [MMEngine](https://github.com/open-mmlab/mmengine)  
-[mmcv](https://github.com/open-mmlab/mmcv) ( 2.0.0 <= mmcv < 2.2.0)  
 [mmagic](https://github.com/open-mmlab/mmagic)
 #### Install PDD
 ```sh
@@ -53,6 +53,8 @@ git clone https://github.com/Yuehan717/PDD.git
 # Navigate into the repository
 cd PDD
 
+# Install dependencies
+pip install -r requirements.txt
 ```
 - If you only want to know the implementation, the main components of our method can be found in [srgan_ref_model.py](basicsr/models/srgan_ref_model.py) and [losses.py](basicsr/losses/losses.py) 😃.
 
@@ -62,8 +64,9 @@ Our method requires two sets of data for training:
 - Paired synthetic data: We use ground-truth images in DF2K and create LRs on the fly.
 - LR real-world data: In the paper, we experiment with RealSR, DRealSR, and NTRIE20.
 
-#### Model Weights
-*Coming soon*
+#### Model Weights 
+[[Here]](https://drive.google.com/drive/folders/1wJSjU3p9ZUx2HNfwVaxi2G03Hr9HlJDz?usp=sharing)
+
 ## 👉 Usage
 ```sh
 # training instructions
